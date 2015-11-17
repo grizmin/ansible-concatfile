@@ -23,11 +23,12 @@ None
 Example Playbook
 ----------------
 
-Example:
+Examples:
 
-    - hosts: servers
-      roles:
-        - { role: grizmin.concat }
+# Example from Ansible Playbooks
+- concatfile: src=/srv/myfiles/foo.conf dest=/etc/foo.conf
+# Cncatenate bashrc.git to remote ~/.bashrc in roder to add git completition
+- concatfile: src=bashrc.git dest=~/.bashrc backup=True force=False
 
 License
 -------
@@ -37,4 +38,4 @@ MIT
 Author Information
 ------------------
 
-Use [github](https://github.com/grizmin/ansible/concat) to file issues
+Use [github](https://github.com/grizmin/ansible-concatfile) to file issues
