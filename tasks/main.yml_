@@ -1,3 +1,0 @@
----
-- name: concatenate file test
-  concatfile: src=afile.txt dest=~/ansible_dev/bfile.txt force=False backup=True
