@@ -25,10 +25,17 @@ Example Playbook
 
 Examples:
 
-:Example from Ansible Playbooks
+- Example from Ansible Playbooks
+
+``` 
 - concatfile: src=/srv/myfiles/foo.conf dest=/etc/foo.conf
-:Cncatenate bashrc.git to remote ~/.bashrc in roder to add git completition
+```
+
+- Cncatenate bashrc.git to remote ~/.bashrc in roder to add git completition
+
+```
 - concatfile: src=bashrc.git dest=~/.bashrc backup=True force=False
+```
 
 License
 -------
