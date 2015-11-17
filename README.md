@@ -31,7 +31,7 @@ Examples:
 - concatfile: src=/srv/myfiles/foo.conf dest=/etc/foo.conf
 ```
 
-- Cncatenate bashrc.git to remote ~/.bashrc in roder to add git completition
+- append bashrc.git to remote ~/.bashrc
 
 ```
 - concatfile: src=bashrc.git dest=~/.bashrc backup=True force=False
